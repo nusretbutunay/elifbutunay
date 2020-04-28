@@ -1,0 +1,49 @@
+$first-color: #000;
+$second-color: #fff;
+$third-color: #aaa;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 10vh 30vw;
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+.slidein {
+  width: 100% !important;
+  animation: slidein;
+  animation-duration: 1s;
+  z-index: 2;
+}
+
+.slideout {
+  width: 0;
+  animation: slideout;
+  animation-duration: 1s;
+}
+
+@keyframes slidein {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes slideout {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}

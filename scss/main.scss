@@ -1,0 +1,163 @@
+@import "global";
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4rem;
+
+  .left {
+    background-color: $first-color;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 35vw;
+
+    .portrait-border {
+      margin: 5vh 28vw;
+      width: 7vw;
+      height: 15vh;
+      position: relative;
+      border: 1px solid $third-color;
+      border-right: none;
+
+      .portrait {
+        position: absolute;
+        background-image: url(/img/profile.jpg);
+        width: 5vw;
+        height: 10vh;
+        border: 1px solid $second-color;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+        right: 0.8vw;
+        bottom: 2vh;
+      }
+    }
+
+    .navbar {
+      margin-top: 10vh;
+      margin-left: 15vw;
+
+      .navlinks {
+        .btn {
+          cursor: pointer;
+          position: relative;
+          display: block;
+          padding: 20px;
+          margin: 25px;
+          border: 1px solid $second-color;
+          border-radius: 10px;
+          width: 250px;
+          color: $second-color;
+          font-family: "Open-sans", sans-serif;
+
+          &:hover {
+            background-color: $second-color;
+            color: $first-color;
+          }
+
+          i {
+            padding-right: 15px;
+            padding-left: 15px;
+          }
+        }
+      }
+    }
+    .social-section {
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      margin: 0;
+
+      .social {
+        cursor: pointer;
+        color: $second-color;
+        padding: 10px;
+
+        i {
+          border: 1px solid white;
+          border-top-left-radius: 10%;
+          border-top-right-radius: 10%;
+          padding: 10px;
+          box-shadow: 2px -2px 3px -1px #fff;
+
+          &:hover {
+            background-color: $second-color;
+            color: $first-color;
+          }
+        }
+      }
+    }
+  }
+
+  .right {
+    background-color: $second-color;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 65vw;
+
+    .name-title-border {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      margin: 5vh 0;
+      padding-left: 15px;
+      width: 20vw;
+      height: 15vh;
+      border: 1px solid $third-color;
+      border-left: none;
+
+      .name {
+        padding-bottom: 15px;
+      }
+    }
+
+    .pages {
+      position: relative;
+
+      .page {
+        position: absolute;
+        padding-top: 50px;
+        padding-left: 30px;
+        height: 100vh;
+        width: 100%;
+
+        h2 {
+          margin-bottom: 10px;
+        }
+        p {
+          padding-right: 55px;
+          text-align: justify;
+        }
+      }
+
+      .about {
+        right: 0;
+        width: 0;
+        //background-color: green;
+      }
+
+      .skills {
+        right: 0;
+        width: 0;
+        //background-color: red;
+      }
+
+      .work {
+        right: 0;
+        width: 0;
+        //background-color: blue;
+      }
+
+      .contact {
+        right: 0;
+        width: 0;
+        //background-color: coral;
+      }
+    }
+  }
+}

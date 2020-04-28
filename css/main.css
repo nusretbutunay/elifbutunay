@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  margin: 10vh 30vw;
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+.slidein {
+  width: 100% !important;
+  -webkit-animation: slidein;
+          animation: slidein;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  z-index: 2;
+}
+
+.slideout {
+  width: 0;
+  -webkit-animation: slideout;
+          animation: slideout;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes slidein {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes slideout {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
+@keyframes slideout {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4rem;
+}
+
+body .left {
+  background-color: #000;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 35vw;
+}
+
+body .left .portrait-border {
+  margin: 5vh 28vw;
+  width: 7vw;
+  height: 15vh;
+  position: relative;
+  border: 1px solid #aaa;
+  border-right: none;
+}
+
+body .left .portrait-border .portrait {
+  position: absolute;
+  background-image: url(/img/profile.jpg);
+  width: 5vw;
+  height: 10vh;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  right: 0.8vw;
+  bottom: 2vh;
+}
+
+body .left .navbar {
+  margin-top: 10vh;
+  margin-left: 15vw;
+}
+
+body .left .navbar .navlinks .btn {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  padding: 20px;
+  margin: 25px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  width: 250px;
+  color: #fff;
+  font-family: "Open-sans", sans-serif;
+}
+
+body .left .navbar .navlinks .btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+body .left .navbar .navlinks .btn i {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+body .left .social-section {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+}
+
+body .left .social-section .social {
+  cursor: pointer;
+  color: #fff;
+  padding: 10px;
+}
+
+body .left .social-section .social i {
+  border: 1px solid white;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  padding: 10px;
+  -webkit-box-shadow: 2px -2px 3px -1px #fff;
+          box-shadow: 2px -2px 3px -1px #fff;
+}
+
+body .left .social-section .social i:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+body .right {
+  background-color: #fff;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 65vw;
+}
+
+body .right .name-title-border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5vh 0;
+  padding-left: 15px;
+  width: 20vw;
+  height: 15vh;
+  border: 1px solid #aaa;
+  border-left: none;
+}
+
+body .right .name-title-border .name {
+  padding-bottom: 15px;
+}
+
+body .right .pages {
+  position: relative;
+}
+
+body .right .pages .page {
+  position: absolute;
+  padding-top: 50px;
+  padding-left: 30px;
+  height: 100vh;
+  width: 100%;
+}
+
+body .right .pages .page h2 {
+  margin-bottom: 10px;
+}
+
+body .right .pages .page p {
+  padding-right: 55px;
+  text-align: justify;
+}
+
+body .right .pages .about {
+  right: 0;
+  width: 0;
+}
+
+body .right .pages .skills {
+  right: 0;
+  width: 0;
+}
+
+body .right .pages .work {
+  right: 0;
+  width: 0;
+}
+
+body .right .pages .contact {
+  right: 0;
+  width: 0;
+}
