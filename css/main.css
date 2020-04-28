@@ -92,7 +92,7 @@ body .left .portrait-border {
 
 body .left .portrait-border .portrait {
   position: absolute;
-  background-image: url(/img/profile.jpg);
+  background-image: url(./img/profile.jpg);
   width: 5vw;
   height: 10vh;
   border: 1px solid #fff;
