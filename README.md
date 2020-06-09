@@ -2,7 +2,7 @@
 
 > This is a freelance portfolio project for a graphic designer.
 
-![](/img/elif.png)
+![](img/elif.PNG)
 
 ## Built With
 
