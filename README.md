@@ -7,8 +7,8 @@
 ## Built With
 
 - HTML5
-- CSS3
--Javascript
+- CSS3 
+- Javascript
 
 ## Live Demo
 
@@ -41,4 +41,4 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-Thanks to Elif Butunay for giving me opportunity to build her portfolio page.
+Thanks to Elif Butunay for giving me opportunity to build her portfolio page. Test 1
